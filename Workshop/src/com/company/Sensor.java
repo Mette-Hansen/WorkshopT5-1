@@ -10,8 +10,6 @@ public abstract class Sensor extends Unit{
         this.value = value;
     }
 
-
-
     public double getValue() {
         return value;
     }
