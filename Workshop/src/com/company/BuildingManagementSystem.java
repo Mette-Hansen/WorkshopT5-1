@@ -5,21 +5,20 @@ import java.util.UUID;
 
 public class BuildingManagementSystem {
 
-    List<Building> buildings;
+    private List<Building> building;
 
-    public List<Building> getBuildings() {
-
-        return buildings;
+    public List<Building> getBuilding() {
+        return building;
     }
 
     public UUID addBuilding(String name){
-        if (!buildings.contains(name)){
-            buildings.add(name);
+        if (!building.contains(name)){
+            building.add(name);
         }
     }
 
     public void removeBuilding(UUID id){
-        buildings.remove(id);
+        building.remove(id);
     }
 
 
