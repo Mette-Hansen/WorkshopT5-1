@@ -1,11 +1,14 @@
 package com.company;
 
+import java.util.UUID;
+
 public abstract class Actuator extends Unit {
     //Attribute
-    private double value;
+    double value;
 
-    public Actuator(double value) {
-        super();
+    public Actuator(String name, UUID id, double value) {
+        super(name,id);
+        this.value=value;
 
     }
 
