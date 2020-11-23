@@ -12,7 +12,7 @@ public class BuildingManagementSystem {
     }
 
     public UUID addBuilding(String name){
-        if (!building.contains(name)){
+        if (!building.contains(name){
             building.add(name);
         }
     }
