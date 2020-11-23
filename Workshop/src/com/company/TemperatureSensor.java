@@ -9,12 +9,6 @@ public class TemperatureSensor extends Sensor {
         super(name, id, value);
     }
 
-
-    //public void setTemperatureSensor(double value) { this.value=value;}
-
-
-
-
     @Override
     public String toString() {
         return "TemperatureSensor{" +
