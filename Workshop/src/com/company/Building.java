@@ -19,19 +19,19 @@ public class Building extends Unit {
 
     }
 
-    public LinkedList getSensors() {
+    public LinkedList<Sensor> getSensors() {
         return sensors;
     }
 
-    public LinkedList getActuator() {
+    public LinkedList<Actuator> getActuator() {
         return actuators;
     }
 
-    public UUID addTemperatureSensor(String name) {
-        UUID id = UUID.randomUUID();
-        Sensor sensor = new TemperatureSensor(name, id, 22);
+    public UUID addTemperatureSensor(String name,double value, UUID id) {
+        UUID id2 = UUID.randomUUID();
+        Sensor sensor = new TemperatureSensor(name, id,value);
         sensors.add(sensor);
-        return id;
+        return id2;
     }
     public UUID addCo2Sensor(String name) {
         UUID id = UUID.randomUUID();
