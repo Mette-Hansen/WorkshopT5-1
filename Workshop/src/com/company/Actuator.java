@@ -2,12 +2,13 @@ package com.company;
 
 public abstract class Actuator extends Unit {
     //Attribute
-    double value;
+    private double value;
 
-    //Constructor
-    public Actuator(double value){
-        this.value=value;
+    public Actuator(double value) {
+        super();
+
     }
+
 
     //Methods
 

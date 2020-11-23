@@ -2,7 +2,7 @@ package com.company;
 
 public class VentilationActuator extends Actuator{
     //Attribute to String
-    String name;
+    private String name;
 
     //Constructor matching super
     public VentilationActuator(String name, double value) {
