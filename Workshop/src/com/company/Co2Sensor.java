@@ -8,8 +8,6 @@ public class Co2Sensor extends Sensor {
         super(name, id, value);
     }
 
-
-
     @Override
     public String toString() {
         return "Co2Sensor{" +
